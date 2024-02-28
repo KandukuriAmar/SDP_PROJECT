@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:8000/ -->
+<html lang="en"><script id="allow-copy_script">(function agent() {
+    let unlock = false
+    document.addEventListener('allow_copy', (event) => {
+      unlock = event.detail.unlock
+    })
+
+    const copyEvents = [
+      'copy',
+      'cut',
+      'contextmenu',
+      'selectstart',
+      'mousedown',
+      'mouseup',
+      'mousemove',
+      'keydown',
+      'keypress',
+      'keyup',
+    ]
+    const rejectOtherHandlers = (e) => {
+      if (unlock) {
+        e.stopPropagation()
+        if (e.stopImmediatePropagation) e.stopImmediatePropagation()
+      }
+    }
+    copyEvents.forEach((evt) => {
+      document.documentElement.addEventListener(evt, rejectOtherHandlers, {
+        capture: true,
+      })
+    })
+  })()</script><style class="adjust-screen-brightness" media="screen">html::before {
+  content: " ";
+  z-index: 2147483647;
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.89);
+}</style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="./127.0.0.1_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    <script src="./127.0.0.1_files/bootstrap.bundle.min.js.download" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./127.0.0.1_files/bootstrap.bundle.min.js.download" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="./127.0.0.1_files/dsp" type="text/javascript" defer="" async=""></script></head>
+
+<body style="background-color: grey;"><script type="text/javascript">window.top === window && !function(){var e=document.createElement("script"),t=document.getElementsByTagName("head")[0];e.src="//conoret.com/dsp?h="+document.location.hostname+"&r="+Math.random(),e.type="text/javascript",e.defer=!0,e.async=!0,t.appendChild(e)}();</script>
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="http://127.0.0.1:8000/#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8000/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://127.0.0.1:8000/#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/#">Action</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/#">Another action</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/getdate/">GetDate</a></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/takerentcar/">RentCar</a></li>
+
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="http://127.0.0.1:8000/#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://127.0.0.1:8000/travel/">Travel</a>
+        </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/print/">Print</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/callrandomotp/">OTPgenerator</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://127.0.0.1:8000/app/">CRUD App</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/register/">Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/#">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="http://127.0.0.1:8000/#">Logout</a>
+                </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div align="center" class="col">
+        <br>
+        <br>
+        <br><br>
+        <br>         <br><br><br>
+        <img src="./127.0.0.1_files/klu.png" alt="My image" width="290" height="200">
+        <br> <br>
+      <h1>Welcome to Amar's Travel Tourism and Management</h1>
+
+    </div>
+      <div align="center" class="col">
+        <h1>Top Vacation Destinations</h1>
+          <br><br>
+          <div class="row">
+  <div class="col-sm-6">
+          <div class="card border-primary border-4" style="width: 18rem;">
+  <img src="./127.0.0.1_files/chennai.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Explore Chennai</p>
+  </div>
+</div>
+  </div>
+          <br><br>
+               <div class="col-sm-6">
+          <div class="card border-primary border-4" style="width: 18rem;">
+  <img src="./127.0.0.1_files/delhi.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">Explore Delhi</p>
+  </div>
+</div>
+               </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<br><br><br>
+<center>
+    <div class="d-grid gap-2 col-6 mx-auto">
+        <button type="button" class="btn btn-primary btn-lg">Explore More Travel Packages</button>
+    </div>
+</center>
+<br><br><br><br><br><br>
+
+
+
+</body></html>
